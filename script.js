@@ -14,5 +14,6 @@ header = document.getElementById("url").textContent;
             else if(name != '' && year == ''){
                concat = concat + '?name=' + name;
             }
-            document.getElementById("url").innerHTML=concat;
+            return concat;
         }
+		document.getElementById("url").innerHTML=extend();
