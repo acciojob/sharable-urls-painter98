@@ -14,6 +14,6 @@
             else if(name != '' && year == ''){
                concat = concat + '?name=' + name;
             }
-            return concat;
+           
+		document.querySelector("h3").innerHTML = concat;
         }
-		document.getElementById("url").innerHTML = extend();
