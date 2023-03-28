@@ -1,14 +1,18 @@
-// your code here
-let header = document.getElementsById("url").value;
-let name = document.getElementsById("name").value;
-let year = document.getElementsById("year").value;
+header = document.getElementById("url").textContent;
+        let name = document.getElementById("name").value;
+        let year = document.getElementById("year").value;
+        let concat = header;
 
-if(name != '' && year != ''){
-	header.textContent = header + '/?name=' + name + '&year=' + year;  
-}
-else if(name == '' && year != ''){
-	header.textContent = header + '/?year=' + year;
-}
-else{
-	header.textContent = header + '/?name=' + name;
-}
+
+        function extend(){
+            if(name != '' && year != ''){
+               concat = concat + "?name=" + name + "&year=" + year; 
+            }
+            else if(name == '' && year != ''){
+               concat = concat + '?year=' + year;
+            }
+            else if(name != '' && year == ''){
+               concat = concat + '?name=' + name;
+            }
+            document.getElementById("url").innerHTML=concat;
+        }
