@@ -1,4 +1,4 @@
-header = document.getElementById("url").textContent;
+        let header = document.getElementById("url").textContent;
         let name = document.getElementById("name").value;
         let year = document.getElementById("year").value;
         let concat = header;
@@ -16,4 +16,4 @@ header = document.getElementById("url").textContent;
             }
             return concat;
         }
-		document.getElementById("url").innerHTML=extend();
+		document.getElementById("url").innerHTML = extend();
