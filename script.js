@@ -6,7 +6,6 @@
            
         concat=operation(name,year,header,concat);
 		document.querySelector("#url").innerHTML = concat;
-        document.querySelector("#result").innerHTML = concat;
         }
        function operation(name,year,header,concat){
 	        if(name != '' && year != ''){
